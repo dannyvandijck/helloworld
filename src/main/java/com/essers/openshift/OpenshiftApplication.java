@@ -10,6 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class OpenshiftApplication {
 
+	@GetMapping("/")
+	public String welcome() {
+		return "Welcome";
+	}
+
 	@GetMapping("/hello")
 	public String helloWorld() {
 		return "Hello world";
